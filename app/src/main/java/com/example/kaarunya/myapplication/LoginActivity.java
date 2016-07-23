@@ -91,6 +91,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
         Button gotoHomeButton = (Button) findViewById(R.id.goto_home);
+        if(BuildConfig.DEBUG){
+            gotoHomeButton.setVisibility(View.VISIBLE);
+        }
         gotoHomeButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
